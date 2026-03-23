@@ -64,11 +64,7 @@ export default function Faq() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.07 }}
                 viewport={{ once: true }}
-                style={{
-                  background: "#101828",
-                  border: "1px solid #1e2d45",
-                  borderRadius: "8px",
-                }}
+                className="bg-gray-950/60 border border-[#1e2d45] rounded-lg"
               >
                 {/* Question Row */}
                 <button

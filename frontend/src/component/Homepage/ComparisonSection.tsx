@@ -96,12 +96,7 @@ export default function ComparisonSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            style={{
-              background: "#0d1526",
-              border: "1px solid #1e2d45",
-              borderRadius: "12px",
-              padding: "28px 28px",
-            }}
+            className="bg-gray-950/60 border border-[#1e2d45] rounded-xl p-7"
           >
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
               Traditional Prediction Platforms
@@ -129,12 +124,7 @@ export default function ComparisonSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            style={{
-              background: "#0d1526",
-              border: "1px solid #1e2d45",
-              borderRadius: "12px",
-              padding: "28px 28px",
-            }}
+            className="bg-gray-950/60 border border-[#1e2d45] rounded-xl p-7"
           >
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
               InsightArena
