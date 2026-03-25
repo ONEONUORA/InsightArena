@@ -76,8 +76,6 @@ export default function Home() {
           <ComparisonSection />
           <TransparentGrid />
           <StatisticsSection />
-          <TransparentGrid />
-          <StatisticsSection />
           <Faq />
           <Footer />
         </div>
