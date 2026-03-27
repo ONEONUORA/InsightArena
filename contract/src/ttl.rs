@@ -89,8 +89,7 @@ pub fn extend_season_ttl(env: &Env, season_id: u32) {
 mod tests {
     use soroban_sdk::testutils::{
         storage::{Persistent as _, Temporary as _},
-        Address as _,
-        Ledger as _,
+        Address as _, Ledger as _,
     };
     use soroban_sdk::token::StellarAssetClient;
     use soroban_sdk::{symbol_short, vec, Address, Env, String, Symbol};

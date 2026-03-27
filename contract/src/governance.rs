@@ -42,7 +42,9 @@ fn load_categories(env: &Env) -> Vec<Symbol> {
 }
 
 fn store_categories(env: &Env, categories: &Vec<Symbol>) {
-    env.storage().instance().set(&DataKey::Categories, categories);
+    env.storage()
+        .instance()
+        .set(&DataKey::Categories, categories);
 }
 
 fn load_proposal(env: &Env, proposal_id: u32) -> Result<Proposal, InsightArenaError> {
@@ -61,7 +63,11 @@ fn store_proposal(env: &Env, proposal: &Proposal) {
 fn proposal_quorum(total_users: u32) -> u32 {
     // 10% quorum, rounded up; minimum 1 to avoid auto-pass with zero participation.
     let rounded = total_users.saturating_add(9) / 10;
-    if rounded == 0 { 1 } else { rounded }
+    if rounded == 0 {
+        1
+    } else {
+        rounded
+    }
 }
 
 fn emit_proposal_executed(env: &Env, proposal_id: u32, summary: Symbol) {

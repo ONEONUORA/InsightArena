@@ -3,19 +3,19 @@
 pub mod config;
 pub mod errors;
 pub mod escrow;
+pub mod governance;
 pub mod invite;
 pub mod market;
 pub mod oracle;
 pub mod prediction;
-pub mod governance;
 pub mod season;
 pub mod security;
 pub mod storage_types;
 pub mod ttl;
 pub use crate::config::Config;
 pub use crate::errors::InsightArenaError;
-pub use crate::market::CreateMarketParams;
 pub use crate::governance::{Proposal, ProposalType};
+pub use crate::market::CreateMarketParams;
 pub use crate::storage_types::{
     DataKey, InviteCode, LeaderboardEntry, LeaderboardSnapshot, Market, Prediction, Season,
     UserProfile,
