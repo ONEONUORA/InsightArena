@@ -17,7 +17,7 @@ export default function Footer() {
       links: [
         { name: "Documentation", href: "/docs" },
         { name: "API", href: "/api" },
-        { name: "GitHub", href: "/https://github.com/Arena1X" },
+        { name: "GitHub", href: "https://github.com/Arena1X" },
         { name: "Smart Contracts", href: "/contracts" },
       ],
     },
@@ -28,6 +28,7 @@ export default function Footer() {
         { name: "Twitter", href: "https://twitter.com/InsightArena" },
         { name: "Discord", href: "https://discord.gg/InsightArena" },
         { name: "Terms of Service", href: "/terms" },
+        { name: "Privacy Policy", href: "/privacy" },
       ],
     },
   ];
