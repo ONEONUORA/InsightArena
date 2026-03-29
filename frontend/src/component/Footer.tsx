@@ -37,7 +37,8 @@ export default function Footer() {
         { name: "Telegram", href: "https://t.me/+hR9dZKau8f84YTk0" },
         { name: "Twitter", href: "https://twitter.com/InsightArena" },
         { name: "Discord", href: "https://discord.gg/InsightArena" },
-        { name: "Blog", href: "/blog" },
+        { name: "Contact Support", href: "/contact" },
+        { name: "Terms of Service", href: "/terms" },
       ],
     },
   ];
