@@ -102,4 +102,11 @@ export class UsersController {
   ) {
     return this.usersService.findUserCompetitions(address, query);
   }
+
+  @Get('me/export')
+  @ApiOperation({ summary: 'Export all user data (GDPR)' })
+  @ApiResponse({ status: 200, description: 'User data exported as JSON' })
+  async exportData(@CurrentUser() user: User) {
+    return this.usersService.exportUserData(user.id);
+  }
 }
