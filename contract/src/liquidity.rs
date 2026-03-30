@@ -63,7 +63,7 @@ pub fn calculate_liquidity_value(
     }
 
     if lp_tokens > total_lp_supply {
-        return Err(InsightArenaError::InsufficientBalance);
+        return Err(InsightArenaError::InsufficientFunds);
     }
 
     let value = lp_tokens
