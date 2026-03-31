@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ActivityLog } from '../analytics/entities/activity-log.entity';
+import { CompetitionParticipant } from '../competitions/entities/competition-participant.entity';
 import { Competition } from '../competitions/entities/competition.entity';
 import { FlagsModule } from '../flags/flags.module';
 import { Comment } from '../markets/entities/comment.entity';
@@ -19,6 +20,7 @@ import { AdminService } from './admin.service';
       Comment,
       Prediction,
       Competition,
+      CompetitionParticipant,
       ActivityLog,
     ]),
     FlagsModule,
